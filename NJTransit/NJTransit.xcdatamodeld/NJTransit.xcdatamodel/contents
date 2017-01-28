@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="Stop" representedClassName=".Stop" syncable="YES">
+        <attribute name="stopCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stopDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stopID" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stopLat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stopLong" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="stopName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transitType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zoneID" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="StopTime" representedClassName=".StopTime" syncable="YES">
+        <attribute name="arrivalTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departureTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dropType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shapeDistanceTravelled" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stopID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stopSequence" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transitType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Trip" representedClassName=".Trip" syncable="YES">
+        <attribute name="blockID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="directionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shapeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transitType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripHeadSign" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tripID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Stop" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Trip" positionX="-63" positionY="45" width="128" height="165"/>
+        <element name="StopTime" positionX="-54" positionY="54" width="128" height="180"/>
+    </elements>
+</model>
