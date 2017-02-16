@@ -109,7 +109,7 @@ class TransitData
         transitDB?.open()
         var lstStopTime : [StopTime] = [StopTime]()
         
-        let selectStopTime = "Select tripID,arrivalTime,departureTime,stopID,stopSequence,pickupType,dropType,shapeDistanceTravelled From StopTime"
+        let selectStopTime = "Select rowID,tripID,arrivalTime,departureTime,stopID,stopSequence,pickupType,dropType,shapeDistanceTravelled From StopTime Where  rowid <=200"
         
         NSLog(selectStopTime)
         
@@ -126,6 +126,7 @@ class TransitData
             
             let stopTime = StopTime()
             
+            stopTime.rowID = results?.string(forColumn: "rowID")
             stopTime.tripID = results?.int(forColumn: "tripID")
             
             

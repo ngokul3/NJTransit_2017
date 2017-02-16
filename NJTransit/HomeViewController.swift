@@ -66,8 +66,8 @@ class HomeViewController: UIViewController {
         let busData = BusTransitData()
         
         
-        //let lstTrip = busData.loadTransitTrip()
-        let lstBusStopTime = busData.loadTransitStopTime()
+      //  let lstTrip = busData.loadTransitTrip()
+     //   let lstBusStopTime = busData.loadTransitStopTime()
     //   let lstBusStop = busData.loadTransitStop()
         
        
@@ -112,8 +112,8 @@ class HomeViewController: UIViewController {
             }
         }
         */
-        
         /*
+        
         CKContainer.default().accountStatus { (accountStat, error) in
             if (accountStat == .available) {
                 print("iCloud is available")
@@ -123,7 +123,7 @@ class HomeViewController: UIViewController {
                     //print(x)
                     
                     
-                    let tripRecord = CKRecord(recordType: "Trip")
+                    let tripRecord = CKRecord(recordType: "BusTrip")
                     tripRecord.setObject(trip.blockID as CKRecordValue?, forKey: "BlockId")
                     tripRecord.setObject(trip.directionID as CKRecordValue?, forKey: "DirectionId")
                     tripRecord.setObject(trip.routeID as CKRecordValue?, forKey: "RouteId")
@@ -152,7 +152,7 @@ class HomeViewController: UIViewController {
         
         */
        
-    
+    /*
         CKContainer.default().accountStatus { (accountStat, error) in
             if (accountStat == .available) {
                 print("iCloud is available")
@@ -162,7 +162,8 @@ class HomeViewController: UIViewController {
                     //print(x)
                     
                     
-                    let stopTimeRecord = CKRecord(recordType: "StopTime")
+                    let stopTimeRecord = CKRecord(recordType: "BusStopTime")
+                    stopTimeRecord.setObject(stopTime.rowID as CKRecordValue?, forKey: "RowId")
                     stopTimeRecord.setObject(stopTime.stopID as CKRecordValue?, forKey: "StopId")
                     stopTimeRecord.setObject(stopTime.tripID as CKRecordValue?, forKey: "TripId")
                     stopTimeRecord.setObject(stopTime.arrivalTime as CKRecordValue?, forKey: "ArrivalTime")
@@ -180,7 +181,7 @@ class HomeViewController: UIViewController {
                         if error != nil {
                             print(error)
                         } else {
-                            print((record?.object(forKey: "TripId").debugDescription)!  + " recorded")
+                            print(record?.object(forKey: "RowId") as! String  + " recorded")
                         }
                     }
                 }
@@ -191,7 +192,7 @@ class HomeViewController: UIViewController {
         }
         
         
-        
+        */
         
         
         
@@ -216,11 +217,17 @@ class HomeViewController: UIViewController {
        //print(lstSTop.count)
          getDetails()
         
+        
+        
     }
     
     func getDetails()
     {
         
+       
+        
+        
+      //  transitType.getTransitResult(<#T##transitFilterCriteria: TransitFilterCriteria##TransitFilterCriteria#>, transitSetting: <#T##TransitSetting#>, transitResult: <#T##TransitResult#>, completion: <#T##((Bool) -> ())?##((Bool) -> ())?##(Bool) -> ()#>)
         let transitFilterCriteria = TransitFilterCriteria()
         let transitController = TransitDBManager.sharedTransitInstance
         
@@ -291,8 +298,14 @@ class HomeViewController: UIViewController {
            // let reqTimeInString = transitFilterCriteria.filterDateTme?.dateToStringinHHMM()
 
      
+            let transitType = BusTransit()
+            let transitDelegate = TransitSearchTracker()
+            transitType.delegate = transitDelegate
             
-            let _ = transitObj.getTransitResult(transitFilterCriteria, transitSetting: setting, transitResult: transitResult, completion : { success in
+            
+            
+            //let _ = transitObj.getTransitResult(transitFilterCriteria, transitSetting: setting, transitResult: transitResult, completion : { success in
+            let _ = transitType.getTransitResult(transitFilterCriteria, transitSetting: setting, transitResult: transitResult, completion : { success in
                 if success {
                     
                     let tmpSet = Set<String>()

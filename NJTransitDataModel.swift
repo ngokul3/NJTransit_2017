@@ -40,7 +40,7 @@ class Trip {
 }
 
 class StopTime{
-     var rowId:Int32?
+     var rowID:String?
      var stopID:Int32?
      var tripID:Int32?
      var arrivalTime: String?

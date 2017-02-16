@@ -8,6 +8,23 @@
 
 import Foundation
 
+protocol TransitSearchDelegate{
+    func searchTransit(_ transitFilterCriteria : TransitFilterCriteria, transitSetting: TransitSetting, transitResult: TransitResult , completion: ((Bool)->())?)
+}
+
+
+class TransitSearchTracker : TransitSearchDelegate
+{
+    func searchTransit(_ transitFilterCriteria : TransitFilterCriteria, transitSetting: TransitSetting, transitResult: TransitResult , completion: ((Bool)->())?)
+    {
+        TransitDBManager.sharedTransitInstance.StopFromCloudKitGet(transitFilterCriteria, transitSetting: transitSetting, transitResult: transitResult, completion : { success in
+            if success {
+                
+                completion?(true)
+            }});
+    }
+}
+
 protocol Transit {
     var getStop : [Stop]? {get}
     var getStopTime : [StopTime]? {get}
@@ -19,6 +36,7 @@ protocol Transit {
 
 class BusTransit: Transit
 {
+    var delegate: TransitSearchDelegate?
     
     var getStop : [Stop]?
         {
@@ -50,7 +68,7 @@ class BusTransit: Transit
 
    func getTransitResult(_ transitFilterCriteria : TransitFilterCriteria, transitSetting: TransitSetting, transitResult: TransitResult , completion: ((Bool)->())?)
    {
-    TransitDBManager.sharedTransitInstance.StopFromCloudKitGet(transitFilterCriteria, transitSetting: transitSetting, transitResult: transitResult, completion : { success in
+    delegate?.searchTransit(transitFilterCriteria, transitSetting: transitSetting, transitResult: transitResult, completion : { success in
         if success {
             
            completion?(true)
@@ -62,6 +80,7 @@ class BusTransit: Transit
 
 class TrainTransit: Transit
 {
+     var delegate: TransitSearchDelegate?
     
     var getStop : [Stop]?
         {
@@ -93,7 +112,7 @@ class TrainTransit: Transit
     
     func getTransitResult(_ transitFilterCriteria : TransitFilterCriteria, transitSetting: TransitSetting, transitResult: TransitResult , completion: ((Bool)->())?)
     {
-         TransitDBManager.sharedTransitInstance.StopFromCloudKitGet(transitFilterCriteria, transitSetting: transitSetting, transitResult: transitResult, completion : { success in
+        delegate?.searchTransit(transitFilterCriteria, transitSetting: transitSetting, transitResult: transitResult, completion : { success in
             if success {
                 
                 completion?(true)

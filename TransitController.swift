@@ -118,7 +118,7 @@ class TransitController {
         let predicate = NSPredicate(format: "(\(minLongitude) <= StopLong) AND (StopLong <= \(maxLongitude))" +
             "AND (\(minLatitude) <= StopLat) AND (StopLat <= \(maxLatitude))")
         
-        let query = CKQuery(recordType: "Stop", predicate: predicate)
+        let query = CKQuery(recordType: "BusStop", predicate: predicate)
         
         // Create the initial query operation
         let queryOperation = CKQueryOperation(query: query)
@@ -136,7 +136,7 @@ class TransitController {
             // Process each record
             let stop = Stop()
             
-            stop.stopID =  record["StopId"] as! Int32?
+            stop.stopID =  record["StopID"] as! Int32?
             
             
             stop.stopCode =  record["StopCode"] as! String?
@@ -149,9 +149,9 @@ class TransitController {
             
             stop.stopLong =  record["StopLong"] as! Double?
             
-            stop.zoneID = record["ZoneId"] as! Int32?
+            stop.zoneID = record["ZoneID"] as! Int32?
             
-            stop.location = record["StopLocation"] as! CLLocation
+            stop.location = record["Location"] as! CLLocation
             
             
             stopArray.append(stop)}
@@ -234,7 +234,7 @@ class TransitController {
         //let predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate1, predicate2])
         
      //   predicate = predicate + NSPredicate(format: "StopId IN %@", stopIdArray)
-        let query = CKQuery(recordType: "StopTime", predicate: predicate)
+        let query = CKQuery(recordType: "BusStopTime", predicate: predicate)
         
         // Create the initial query operation
         let queryOperation = CKQueryOperation(query: query)
@@ -315,11 +315,11 @@ class TransitController {
         let stopTimeTripIdArray = stropTimeTripArray.map({$0.tripID!}) //Todo
  
  
-        let predicate = NSPredicate(format: "TripID IN %@", stopTimeTripIdArray)
+        let predicate = NSPredicate(format: "TripId IN %@", stopTimeTripIdArray)
  
         // let predicate = NSPredicate(format: "StopId = 27663")
         
-        let query = CKQuery(recordType: "Trip", predicate: predicate)
+        let query = CKQuery(recordType: "BusTrip", predicate: predicate)
         
         // Create the initial query operation
         let queryOperation = CKQueryOperation(query: query)
