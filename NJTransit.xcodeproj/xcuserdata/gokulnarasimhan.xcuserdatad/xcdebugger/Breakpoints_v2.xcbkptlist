@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJTransit/HomeViewController.swift"
+            timestampString = "507309459.702802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJTransit/HomeViewController.swift"
+            timestampString = "507309883.504032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJTransit/HomeViewController.swift"
+            timestampString = "507311089.595916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJTransit/HomeViewController.swift"
+            timestampString = "507311089.595916"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Transit.swift"
+            timestampString = "508724384.312199"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "getTransitResult(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.BusTransit.getTransitResult (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/Transit.swift"
+                  timestampString = "508812890.877516"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.BusTransit.(getTransitResult (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/Transit.swift"
+                  timestampString = "508812890.881039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Transit.swift"
+            timestampString = "508724836.617884"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "searchTransit(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitSearchTracker.searchTransit (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/Transit.swift"
+                  timestampString = "508812890.88647"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitSearchTracker.(searchTransit (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/Transit.swift"
+                  timestampString = "508812890.888312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508724858.37128"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508724895.245913"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508724930.417245"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.StopFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508725434.618534"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "1816">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.(StopFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508725434.620436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725050.241891"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "StopTimeFromCloudKitGet(_:transitSetting:stopArray:transitResult:stopTimecompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725057.870401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "315"
+            endingLineNumber = "315"
+            landmarkName = "TripFromCloudKitGet(_:transitSetting:stropTimeTripArray:transitResult:tripCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.TripFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, stropTimeTripArray : Swift.Array&lt;NJTransit.StopTime&gt;, transitResult : NJTransit.TransitResult, tripCompletion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.900288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "315"
+                  endingLineNumber = "315"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.(TripFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, stropTimeTripArray : Swift.Array&lt;NJTransit.StopTime&gt;, transitResult : NJTransit.TransitResult, tripCompletion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.901995"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "315"
+                  endingLineNumber = "315"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725131.147115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725139.691408"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725209.721193"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725459.325442"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "StopFromCloudKitGet(_:transitSetting:transitResult:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.StopFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.916879"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "2364">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.(StopFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, transitResult : NJTransit.TransitResult, completion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #2)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.919583"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508725542.246222"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "StopTimeFromCloudKitGet(_:transitSetting:stopArray:transitResult:stopTimecompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NJTransit/HomeViewController.swift"
+            timestampString = "508725846.564527"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "getDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508726632.87883"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
+            landmarkName = "TripFromCloudKitGet(_:transitSetting:stropTimeTripArray:transitResult:tripCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508726666.777103"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "TripFromCloudKitGet(_:transitSetting:stropTimeTripArray:transitResult:tripCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508726674.914824"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
+            landmarkName = "TripFromCloudKitGet(_:transitSetting:stropTimeTripArray:transitResult:tripCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.TripFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, stropTimeTripArray : Swift.Array&lt;NJTransit.StopTime&gt;, transitResult : NJTransit.TransitResult, tripCompletion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.938494"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "362"
+                  endingLineNumber = "362"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NJTransit.TransitController.(TripFromCloudKitGet (NJTransit.TransitFilterCriteria, transitSetting : NJTransit.TransitSetting, stropTimeTripArray : Swift.Array&lt;NJTransit.StopTime&gt;, transitResult : NJTransit.TransitResult, tripCompletion : Swift.Optional&lt;(Swift.Bool) -&gt; ()&gt;) -&gt; ()).(closure #3)"
+                  moduleName = "NJTransit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gokulnarasimhan/iOS/NJTransit-master/TransitController.swift"
+                  timestampString = "508812890.939987"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "328"
+                  endingLineNumber = "328"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitController.swift"
+            timestampString = "508726676.661379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
+            landmarkName = "TripFromCloudKitGet(_:transitSetting:stropTimeTripArray:transitResult:tripCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
