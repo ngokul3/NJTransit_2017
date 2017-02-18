@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class SearchResultViewController: UITableViewController {
+class SearchResultViewController: UITableViewController, UISearchResultsUpdating {
 
     @IBOutlet var SearchResultView: UITableView!
     var lstResult : TransitResult?
@@ -16,9 +17,22 @@ class SearchResultViewController: UITableViewController {
     
    // var distinctTripHeadSign = Set<String>()
     var arrayTripHeadSign = Array<String>()
+    var resultSearchController = UISearchController()
+ 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.resultSearchController = UISearchController(searchResultsController: nil)
+        
+        self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.dimsBackgroundDuringPresentation = false
+        self.resultSearchController.searchBar.sizeToFit()
+        self.tableView.tableHeaderView = self.resultSearchController.searchBar
+        self.tableView.reloadData()
+        
       //  arrayTripHeadSign = Array(distinctTripHeadSign)
       
     }
@@ -103,5 +117,107 @@ class SearchResultViewController: UITableViewController {
             }
 
         }
+    }
+    
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        var setTripHeadSign = Set<String>()
+        
+        
+        let transitFilterCriteria = TransitFilterCriteria()
+        
+        let searchString = searchController.searchBar.text!
+        
+        
+        CLGeocoder().geocodeAddressString(searchString, completionHandler: { (placemarks, error) in
+            if error != nil {
+                print(90)
+                // print(error)
+                return
+            }
+            else{
+                //   print(88)
+            }
+            
+            
+            
+            
+            if (placemarks?.count)! > 0 {
+                let placemark = placemarks?[0]
+                let location = placemark?.location
+                
+              //  let location_test = CLLocation(latitude: 40.736928, longitude: -74.242452)
+            
+                
+                transitFilterCriteria.location = location
+                
+                let coordinate = location?.coordinate
+                print("\nlat: \(coordinate!.latitude), long: \(coordinate!.longitude)")
+                
+                if (transitFilterCriteria.location != nil)
+                {
+                    
+                    
+                    
+                    let transitResult = TransitResult()
+                    
+                    
+                    var dateSetting = DateComponents()
+                    dateSetting.day = 06
+                    dateSetting.hour = 7
+                    dateSetting.minute = 40
+                    dateSetting.month = 9
+                    dateSetting.year = 2016
+                    (dateSetting as NSDateComponents).timeZone = TimeZone(identifier:  "America/New_York")
+                    
+                    
+                    let outFormatter = DateFormatter()
+                    outFormatter.locale = Locale(identifier: "en_US_POSIX")
+                    outFormatter.dateFormat = "hh:mm"
+                    
+                    let userCalendar = Calendar(identifier: Calendar.Identifier.gregorian)
+                    
+                    transitFilterCriteria.filterDateTme = (userCalendar.date(from: dateSetting))!
+                    transitFilterCriteria.transitType = TransitType.bus.description
+                    
+                    let setting = TransitSetting()
+                    
+                    setting.settingBusFilterDistance = 0.5
+                    setting.settingFilterTime = 30
+                    
+                    
+                    let transitType = BusTransit()
+                    let transitDelegate = TransitSearchTracker()
+                    transitType.delegate = transitDelegate
+                    
+                    
+                    
+                    let _ = transitType.getTransitResult(transitFilterCriteria, transitSetting: setting, transitResult: transitResult, completion : { success in
+                        if success {
+                            
+                            let tmpSet = Set<String>()
+                            
+                            let lstBusTrip = transitResult.lstTrip
+                            
+                            setTripHeadSign = tmpSet.union(lstBusTrip.map{$0.truncatedTripHeadSign!}) //ToDo: Unwrap
+                            
+                            self.arrayTripHeadSign = Array(setTripHeadSign)
+                            self.lstResult = transitResult
+                            self.tableView.reloadData()
+                            
+                        } else {
+                            NSLog("Parse unsuccessful")
+                            // I'll handle the issue here
+                        }});
+                    
+                    
+                    
+                }
+                
+            }
+        })
+        
+        
     }
 }

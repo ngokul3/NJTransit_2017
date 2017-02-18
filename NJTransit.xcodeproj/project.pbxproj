@@ -17,7 +17,6 @@
 		55259CC41D8771EA0087BA10 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55259CC31D8771EA0087BA10 /* HomeViewController.swift */; };
 		55259CC61D8772570087BA10 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55259CC51D8772570087BA10 /* SearchResultViewController.swift */; };
 		55419DCC1D5F43E300A05A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55419DCB1D5F43E300A05A9A /* AppDelegate.swift */; };
-		55419DCE1D5F43E300A05A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55419DCD1D5F43E300A05A9A /* ViewController.swift */; };
 		55419DD11D5F43E300A05A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55419DCF1D5F43E300A05A9A /* Main.storyboard */; };
 		55419DD41D5F43E300A05A9A /* NJTransit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55419DD21D5F43E300A05A9A /* NJTransit.xcdatamodeld */; };
 		55419DD61D5F43E300A05A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55419DD51D5F43E300A05A9A /* Assets.xcassets */; };
@@ -75,7 +74,6 @@
 		55259CC51D8772570087BA10 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		55419DC81D5F43E300A05A9A /* NJTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NJTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55419DCB1D5F43E300A05A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55419DCD1D5F43E300A05A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55419DD01D5F43E300A05A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55419DD31D5F43E300A05A9A /* NJTransit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NJTransit.xcdatamodel; sourceTree = "<group>"; };
 		55419DD51D5F43E300A05A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				55C6E7301D63ECE80056143F /* MapViewController.swift */,
-				55419DCD1D5F43E300A05A9A /* ViewController.swift */,
 				55259CC31D8771EA0087BA10 /* HomeViewController.swift */,
 				55259CC51D8772570087BA10 /* SearchResultViewController.swift */,
 			);
@@ -423,7 +420,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55419DCE1D5F43E300A05A9A /* ViewController.swift in Sources */,
 				55C6E7311D63ECE80056143F /* MapViewController.swift in Sources */,
 				55259CC61D8772570087BA10 /* SearchResultViewController.swift in Sources */,
 				55259CC41D8771EA0087BA10 /* HomeViewController.swift in Sources */,

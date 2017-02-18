@@ -34,11 +34,14 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 class HomeViewController: UIViewController {
  
+    
     var setTripHeadSign = Set<String>()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         /*
         
         stopRecord.setObject(1 as CKRecordValue?, forKey: "StopId")
@@ -61,18 +64,18 @@ class HomeViewController: UIViewController {
             }
         })
         */
-        var x = 0;
+      //  var x = 0;
         
-        let busData = BusTransitData()
-        
+       // let busData = BusTransitData()
+      //
         
       //  let lstTrip = busData.loadTransitTrip()
      //   let lstBusStopTime = busData.loadTransitStopTime()
     //   let lstBusStop = busData.loadTransitStop()
         
        
-        let container = CKContainer.default()
-        let publicDatabase = container.publicCloudDatabase
+     //   let container = CKContainer.default()
+       // let publicDatabase = container.publicCloudDatabase
         /*
         CKContainer.default().accountStatus { (accountStat, error) in
             if (accountStat == .available) {
@@ -196,26 +199,7 @@ class HomeViewController: UIViewController {
         
         
         
-     /*
-      
-        guard let storeURL = NSURL(string: "https://drive.google.com/open?id=0B-1jRhZF8VZfRUIyUURzaTFoWkU") else {
-            return
-        }
-        
-        
-        Utils.loadFileSync(storeURL as URL, completion:{(path:String) in
-            print("file downloaded to: \(path)")
-        } )
- 
-        getDetails()
- */
-        
-        
-     //   let testObj = TransitController()
-       // var lstSTop = testObj.StopFromCloudKitGet()
-        
-       //print(lstSTop.count)
-         getDetails()
+    //  getDetails()
         
         
         
@@ -245,7 +229,6 @@ class HomeViewController: UIViewController {
              //   print(88)
             }
             
-            print(placemarks?.count)
             
            
             

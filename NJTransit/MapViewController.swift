@@ -87,7 +87,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
         
         for  stop in filterStops
         {
-            let mapPoints = Artwork(title: stop.stopCode!,
+            let mapPoints = Artwork(title: stop.stopName!,
                                   locationName: stop.stopDesc!,
                                   discipline: "Stops",
                                   coordinate: CLLocationCoordinate2D(latitude: stop.stopLat as Double!, longitude: stop.stopLong as Double!))

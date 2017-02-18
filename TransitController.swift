@@ -337,20 +337,20 @@ class TransitController {
             // Process each record
             let trip = Trip()
             
-            trip.routeID = record["RouteID"] as! Int32?
+            trip.routeID = record["RouteId"] as! Int32?
             
-            trip.serviceID = record["ServiceID"]  as! Int32?
+            trip.serviceID = record["ServiceId"]  as! Int32?
             
-            trip.tripID = record["TripID"]  as! Int32?
+            trip.tripID = record["TripId"]  as! Int32?
             
             trip.tripHeadSign =  record["TripHeadSign"]  as! String?
             
             trip.truncatedTripHeadSign =  record["TruncatedTripHeadSign"] as! String?
             
             
-            trip.blockID =  record["BlockID"] as! Int32?
+            trip.blockID =  record["BlockId"] as! Int32?
             
-            trip.shapeID =  record["ShapeID"] as! Int32?
+            trip.shapeID =  record["ShapeId"] as! Int32?
             
             
             tripArray.append(trip)
