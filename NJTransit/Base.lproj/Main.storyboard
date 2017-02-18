@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="351" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SFK-5h-bAa" id="uJZ-yp-zlk">
-                                    <rect key="frame" x="0.0" y="0.0" width="318" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="317" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -42,7 +42,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYa-TQ-iAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583" y="835"/>
+            <point key="canvasLocation" x="-543" y="-3694"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="97r-xq-nOs">
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovK-Tj-p5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="870.31484257871068"/>
+            <point key="canvasLocation" x="-1201" y="-3664"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="cr2-we-rJy">
@@ -84,20 +84,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-cB-DJH">
-                                <rect key="frame" x="9" y="12" width="306" height="460"/>
+                                <rect key="frame" x="16" y="68" width="306" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-Lz-B6R">
+                                <rect key="frame" x="0.0" y="0.0" width="351" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="6vP-p0-mdg">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Lhf-DD-hLP">
+                                            <connections>
+                                                <action selector="btnBackClick:" destination="2Vw-aq-t4r" id="clA-Ee-Xef"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qOC-YJ-K1J"/>
                     <connections>
+                        <outlet property="btnBack" destination="Lhf-DD-hLP" id="6gP-NE-4Ph"/>
                         <outlet property="mapView" destination="Tgh-cB-DJH" id="Xpl-Yd-Eg1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTL-8f-fyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Item" id="kUO-Wn-E2h"/>
             </objects>
-            <point key="canvasLocation" x="-1476" y="1016"/>
+            <point key="canvasLocation" x="308" y="-3685"/>
         </scene>
     </scenes>
 </document>

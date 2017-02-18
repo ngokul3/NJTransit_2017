@@ -15,6 +15,13 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     public var lstResult : TransitResult?
 
+    @IBOutlet weak var btnBack: UIBarButtonItem!
+    
+    @IBAction func btnBackClick(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+
+    }
+    
     var transitFactory = TransitFactory()
     
     override func viewDidLoad() {
